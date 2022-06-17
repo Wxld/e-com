@@ -32,7 +32,7 @@ const Products = () => {
     }
 
     if(status === STATUS.ERROR) {
-        return <h2>Damn either me or you fucked up.</h2>
+        return <h2>Oops! Something went wrong.</h2>
     }
 
     return (
@@ -41,7 +41,7 @@ const Products = () => {
                 <div className="card" key={product.id}>
                     <img src={product.image} alt="" />
                     <h4>{product.title}</h4>
-                    <h5>${product.price}</h5>
+                    <h5>{product.price}</h5>
                     <button className='btn' onClick={() => handleAdd(product)}>
                         Add to cart
                     </button>

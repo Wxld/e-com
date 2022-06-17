@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const STATUS = Object.freeze({
     IDLE: "idle",
     LOADING: "loading",
-    ERROR: "erro"
+    ERROR: "error"
 });
 
 const productSlice = createSlice({
